@@ -2,6 +2,8 @@ import base64
 
 import streamlit as st
 
+from main import add_bg_from_local
+
 st.title("Финансовый отчет компании ООО 'Гидрогазкомплект' за 2021 год")
 st.write("""Данные предоставлены с сайта nalog.ru""")
 
@@ -14,3 +16,6 @@ def show_pdf(file_path):
         st.markdown(pdf_display, unsafe_allow_html=True)
 
 show_pdf("2021.pdf")
+
+
+add_bg_from_local('theme_15.png')

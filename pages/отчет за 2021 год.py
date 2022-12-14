@@ -5,7 +5,8 @@ import streamlit as st
 st.title("Финансовый отчет компании ООО 'Гидрогазкомплект' за 2021 год")
 st.write("""Данные предоставлены с сайта nalog.ru""")
 
-
+st.info("Если отчет не отображается, то посмотреть/скачать его можно по "
+                "[ссылке](https://bo.nalog.ru/download/bfo/pdf/1747362?period=2021).")
 def show_pdf(file_path):
     with open(file_path,"rb") as f:
         base64_pdf = base64.b64encode(f.read()).decode('utf-8')

@@ -5,6 +5,8 @@ import base64
 st.title("Финансовый отчет компании ООО 'Гидрогазкомплект' за 2019 год")
 st.write("""Данные предоставлены с сайта nalog.ru""")
 
+st.info("Если отчет не отображается, то посмотреть/скачать его можно по "
+                "[ссылке](https://bo.nalog.ru/download/bfo/pdf/1747362?period=2019).")
 
 def show_pdf(file_path):
     with open(file_path,"rb") as f:
